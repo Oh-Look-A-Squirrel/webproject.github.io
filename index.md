@@ -1,37 +1,110 @@
-## Welcome to GitHub Pages
+<html>
+	<head>
+		<title>Asking Alexandria - Home</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+		<link rel="icon" href="images/selftitled.jpg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body id="body">
 
-You can use the [editor on GitHub](https://github.com/Oh-Look-A-Squirrel/webproject.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<span id="hideandshowcontent">
+<section id="top"></section>
 
-### Markdown
+<div class="mobile-header">
+	<div id="inner">
+		<img id="hideandshow" class="head1" src="images/aahead.png" />
+	</div>
+	
+	<video poster="images/headbackgorundmobile.png" id="myVideo">
+		<source src="intothefire.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div class="sticky">
+	<div class="wrap">
+		<div class="row">
+			<div class="left">
+				<i id="pause" class="fa fa-pause" onclick="pauseVid()" aria-hidden="true"></i>
+				<i id="play" class="fa fa-play" onclick="playVid()" aria-hidden="true"></i>
+				<script src="playercontrols.js"></script>
+			</div>
+			<div class="left-middle">
+				<i id="mutesound" class="fa fa-volume-up" onclick="volumenull()" aria-hidden="true"></i>
+				<i id="raisesound" class="fa fa-volume-off" onclick="setFullVolume()" aria-hidden="true"></i>				
+			</div>
+			<div class="right-middle">
+				<i id="eye" onclick="toggle()" class="fa fa-eye" aria-hidden="true"></i>		
+			</div>
+			<div class="right">
+				<i id="arrow" class="fa fa-arrow-right" aria-hidden="true"></i>
+			</div>
+			<script src="playercontrols.js"></script>
+		</div>
+	</div>
+</div>
+</div>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+<div class="img-container">
+	<img onclick="toggleplaylist1()" class="tiled" src="images/standupandscreamsmall.jpg" />
+</div>
 
-- Bulleted
-- List
+<div class="img-container">
+	<img class="tiled" src="images/recklessandrelentlesssmall.jpg" />
+</div>
 
-1. Numbered
-2. List
+<div class="img-container">
+	<img class="tiled" src="images/steppedupandscratchedsmall.jpg" />
+</div>
 
-**Bold** and _Italic_ and `Code` text
+<div class="img-container">
+	<img class="tiled" src="images/deathtodestinysmall.png" />
+</div>
 
-[Link](url) and ![Image](src)
-```
+<div class="img-container">
+	<img class="tiled" src="images/theblacksmall.jpg" />
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div class="img-container">
+	<img class="tiled" src="images/selftitledsmall.jpg" />
+</div>
+<div class="white-space">
+</div>
 
-### Jekyll Themes
+<a href="#top">	
+	<div class="top">
+		<p class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i> BACK TO TOP <i class="fa fa-arrow-up" aria-hidden="true"></i></p>
+	</div>
+</a>
+</span>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Oh-Look-A-Squirrel/webproject.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<script>
+function toggleplaylist1() {
+    var x = document.getElementById("hideandshowcontent");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 
-### Support or Contact
+<script>
+function toggle() {
+    var x = document.getElementById("hideandshow");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
