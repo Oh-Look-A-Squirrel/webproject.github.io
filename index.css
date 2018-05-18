@@ -1,0 +1,162 @@
+#body {
+	background-color: #212121;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 1px) {
+	div.mobile-header {
+		width: 100%;
+		position: relative;
+	}
+	
+	div.sticky {
+				position: -webkit-sticky;
+		  position: sticky;
+  top: 0;
+	}
+	
+	#myVideo {
+		width: 100%;
+	}
+	
+	#inner {
+		position: absolute;
+	transform: translate(0px, -50%);
+	top: 50%;
+	text-align: center;
+	padding: 0px 20px 0px 20px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	}
+	
+	div.white-space {
+		height: 40px;
+		width: 100%;
+		clear: both;
+	}
+	
+	img.head1 {
+		width: 100%;
+		display: block;
+	}
+	
+		div.wrap {
+		display: table;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	img.tiled {
+		width: 100%;
+	}
+	
+	div.img-container {
+		width: 50%;
+		float: left;
+	}
+	
+	div.row {
+		display: table-row;
+		width: 100%;
+		background-image: url(images/fillfix.png);
+		background-size: 100% 100%;
+	}
+	
+	div.left {
+		display: table-cell;
+		width: 26.3%;
+		text-align: center;
+		padding: 15px;
+		background-color: #333333;
+	}
+	
+		div.content {
+		display: table-cell;
+		width: 100%;
+		text-align: center;
+		padding: 15px;
+		background-color: #333333;
+	}
+	
+	div.left-middle {
+		display: table-cell;
+		width: 26.3%;
+		text-align: center;
+		background-color: #383838;
+	}
+	
+	div.right-middle {
+		display: table-cell;
+		width: 26.3%;
+		text-align: center;
+		background-color: #333333;
+	}
+	
+	div.right {
+		display: table-cell;
+		width: 26.3%;
+		text-align: center;
+		background-color: #383838;
+	}
+	
+	#mutesound {
+		color: #FFFFFF;
+	}
+	
+	#raisesound {
+		display: none;
+		color: #FFFFFF;
+	}
+	
+	#play {
+		display: none;
+		color: #FFFFFF;
+	}
+	
+	#pause {
+		color: #FFFFFF;
+	}
+	
+	#eye {
+		color: #FFFFFF;
+	}
+	
+	#arrow {
+		color: #FFFFFF;
+	}
+	
+	div.top {
+		background-color: #333333;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		position: fixed;
+		text-align: center;
+		margin: 0px;
+		padding: 10px;
+	}
+	
+	p.top {
+		margin: 0px;
+		color: #FFFFFF;
+	}
+	
+	#mobile {
+		display: block;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
